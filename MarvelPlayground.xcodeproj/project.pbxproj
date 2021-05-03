@@ -27,6 +27,7 @@
 		AF67E7CB263F2B26007FF897 /* AsyncImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF67E7CA263F2B26007FF897 /* AsyncImageUtils.swift */; };
 		AF67E7CD263F3FDE007FF897 /* CharacterListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF67E7CC263F3FDE007FF897 /* CharacterListItemView.swift */; };
 		AF747567263FAC9B00EA2654 /* ImageCacheUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF747566263FAC9B00EA2654 /* ImageCacheUtils.swift */; };
+		AF74756E263FC9C100EA2654 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF74756D263FC9C100EA2654 /* CharacterDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		AF67E7CA263F2B26007FF897 /* AsyncImageUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageUtils.swift; sourceTree = "<group>"; };
 		AF67E7CC263F3FDE007FF897 /* CharacterListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListItemView.swift; sourceTree = "<group>"; };
 		AF747566263FAC9B00EA2654 /* ImageCacheUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheUtils.swift; sourceTree = "<group>"; };
+		AF74756D263FC9C100EA2654 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 			children = (
 				AF67E7CC263F3FDE007FF897 /* CharacterListItemView.swift */,
 				AF67E79F263E5E2F007FF897 /* CharactersListView.swift */,
+				AF74756D263FC9C100EA2654 /* CharacterDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				AF67E7AA263E8199007FF897 /* NetworkUtils.swift in Sources */,
 				AF67E7AC263E939D007FF897 /* SecurityUtils.swift in Sources */,
 				AF67E7C2263F0B55007FF897 /* SearchBarView.swift in Sources */,
+				AF74756E263FC9C100EA2654 /* CharacterDetailView.swift in Sources */,
 				AF4FD071263DFA2500E4FDAF /* FeaturedView.swift in Sources */,
 				AF67E7C5263F0C5F007FF897 /* CustomTextField.swift in Sources */,
 				AF67E7A2263E5EB5007FF897 /* ComicsListView.swift in Sources */,

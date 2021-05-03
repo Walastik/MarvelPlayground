@@ -33,6 +33,8 @@ struct CharacterListItemView: View {
                     .lineLimit(3)
                     .padding(.trailing, 8)
             })
+        }.onTapGesture {
+            print(character.name!)
         }
     }
 }
