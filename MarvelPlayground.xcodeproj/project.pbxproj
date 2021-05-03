@@ -28,6 +28,7 @@
 		AF67E7C7263F1162007FF897 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF67E7C6263F1162007FF897 /* CharacterCell.swift */; };
 		AF67E7CB263F2B26007FF897 /* AsyncImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF67E7CA263F2B26007FF897 /* AsyncImageUtils.swift */; };
 		AF67E7CD263F3FDE007FF897 /* CharacterListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF67E7CC263F3FDE007FF897 /* CharacterListItemView.swift */; };
+		AF747567263FAC9B00EA2654 /* ImageCacheUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF747566263FAC9B00EA2654 /* ImageCacheUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		AF67E7C6263F1162007FF897 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 		AF67E7CA263F2B26007FF897 /* AsyncImageUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageUtils.swift; sourceTree = "<group>"; };
 		AF67E7CC263F3FDE007FF897 /* CharacterListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListItemView.swift; sourceTree = "<group>"; };
+		AF747566263FAC9B00EA2654 /* ImageCacheUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				AF67E7A9263E8199007FF897 /* NetworkUtils.swift */,
 				AF67E7AB263E939D007FF897 /* SecurityUtils.swift */,
 				AF67E7CA263F2B26007FF897 /* AsyncImageUtils.swift */,
+				AF747566263FAC9B00EA2654 /* ImageCacheUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				AF67E7C7263F1162007FF897 /* CharacterCell.swift in Sources */,
 				AF67E7B9263E9BD2007FF897 /* Comic.swift in Sources */,
 				AF67E7A4263E5EE2007FF897 /* MainView.swift in Sources */,
+				AF747567263FAC9B00EA2654 /* ImageCacheUtils.swift in Sources */,
 				AF4FD06F263DFA2500E4FDAF /* MarvelPlaygroundApp.swift in Sources */,
 				AF67E7CB263F2B26007FF897 /* AsyncImageUtils.swift in Sources */,
 				AF67E7B2263E9611007FF897 /* Character.swift in Sources */,
