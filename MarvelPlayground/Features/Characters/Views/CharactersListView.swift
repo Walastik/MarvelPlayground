@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CharactersListView: View {
-    @ObservedObject var charactersService = CharacterViewModel()
+    @ObservedObject var charactersViewModel = CharacterViewModel()
     @State private var searchTerm = ""
     
     var body: some View {
@@ -39,17 +39,17 @@ struct CharactersListView: View {
     
     private func getCharacters() -> [Character] {
         return searchTerm.isEmpty
-            ? charactersService.characters
-            : charactersService.characters.filter({$0.name?.lowercased().contains(searchTerm.lowercased()) ?? false})
+            ? charactersViewModel.characters
+            : charactersViewModel.characters.filter({$0.name?.lowercased().contains(searchTerm.lowercased()) ?? false})
     }
     
     private func fetchData() {
-        charactersService.get(completion: {_ in})
+        charactersViewModel.get(completion: {_ in})
     }
     
     private func fetchDataByName(name: String) -> [Character] {
-        charactersService.getByName(name: name, completion: {_ in})
-        return charactersService.characters
+        charactersViewModel.getByName(name: name, completion: {_ in})
+        return charactersViewModel.characters
     }
 }
 
