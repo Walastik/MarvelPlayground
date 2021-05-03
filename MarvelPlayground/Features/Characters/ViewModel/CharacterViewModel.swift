@@ -20,7 +20,7 @@ final class CharacterViewModel: CharacterManagerProtocol, ObservableObject {
                 print(err)
                 
             case .success(let resp):
-                self.characters = resp.data.results
+                self.characters = resp.data!.results
             }
         }
         

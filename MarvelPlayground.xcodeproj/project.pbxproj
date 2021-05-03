@@ -27,6 +27,7 @@
 		AF67E7C5263F0C5F007FF897 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF67E7C4263F0C5F007FF897 /* CustomTextField.swift */; };
 		AF67E7C7263F1162007FF897 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF67E7C6263F1162007FF897 /* CharacterCell.swift */; };
 		AF67E7CB263F2B26007FF897 /* AsyncImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF67E7CA263F2B26007FF897 /* AsyncImageUtils.swift */; };
+		AF67E7CD263F3FDE007FF897 /* CharacterListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF67E7CC263F3FDE007FF897 /* CharacterListItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		AF67E7C4263F0C5F007FF897 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		AF67E7C6263F1162007FF897 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 		AF67E7CA263F2B26007FF897 /* AsyncImageUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageUtils.swift; sourceTree = "<group>"; };
+		AF67E7CC263F3FDE007FF897 /* CharacterListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 				AF67E79F263E5E2F007FF897 /* CharactersListView.swift */,
 				AF67E7C1263F0B55007FF897 /* SearchCharactersListView.swift */,
 				AF67E7C6263F1162007FF897 /* CharacterCell.swift */,
+				AF67E7CC263F3FDE007FF897 /* CharacterListItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				AF67E7B7263E9A18007FF897 /* CharactersResponse.swift in Sources */,
 				AF67E7B5263E96D4007FF897 /* MarvelApiBaseResponse.swift in Sources */,
 				AF67E7A0263E5E2F007FF897 /* CharactersListView.swift in Sources */,
+				AF67E7CD263F3FDE007FF897 /* CharacterListItemView.swift in Sources */,
 				AF67E7BD263EA9F4007FF897 /* CharacterManagerProtocol.swift in Sources */,
 				AF67E7C0263EAB6B007FF897 /* CharacterViewModel.swift in Sources */,
 				AF67E7BB263EA11C007FF897 /* CharactersService.swift in Sources */,

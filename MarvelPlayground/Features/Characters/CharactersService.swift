@@ -10,7 +10,7 @@ import Foundation
 struct CharactersService {
     
     static var baseUrl: String {
-        return "http://gateway.marvel.com/v1/public/characters?"
+        return "https://gateway.marvel.com/v1/public/characters?"
     }
     
     static func searchUrl() -> String {
