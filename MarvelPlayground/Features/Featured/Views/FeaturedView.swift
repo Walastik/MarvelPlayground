@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  FeaturedView.swift
 //  MarvelPlayground
 //
 //  Created by Cody Miller on 5/1/21.
@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct FeaturedView: View {
     var body: some View {
-        Text("Testing")
+        Text("Featured View")
             .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct FeaturedView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        FeaturedView()
     }
 }

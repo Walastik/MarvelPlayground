@@ -25,7 +25,7 @@ struct CharactersListView: View {
             VStack(alignment: .leading) {
                 List {
                     Group {
-                        SearchCharactersListView(characterSearchTerm: $searchTerm)
+                        SearchBarView(searchTerm: $searchTerm)
                         
                         ForEach(getCharacters(), id: \.id) { character in
                             CharacterCell(character: character)

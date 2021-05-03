@@ -10,11 +10,11 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         TabView {
-            ContentView()
-                .tabItem {
-                    Image(systemName: "square.grid.2x2")
-                    Text("Content")
-                }
+//            FeaturedView()
+//                .tabItem {
+//                    Image(systemName: "square.grid.2x2")
+//                    Text("Featured")
+//                }
             
             CharactersListView()
                 .tabItem {
@@ -22,11 +22,11 @@ struct MainView: View {
                     Text("Characters")
                 }
             
-            ComicsListView()
-                .tabItem {
-                    Image(systemName: "book.fill")
-                    Text("Comics")
-                }
+//            ComicsListView()
+//                .tabItem {
+//                    Image(systemName: "book.fill")
+//                    Text("Comics")
+//                }
         }
     }
 }

@@ -10,4 +10,5 @@ import Foundation
 protocol CharacterManagerProtocol {
     var characters: [Character] { get set }
     func get(completion: @escaping (Result<[Character], NetworkError>) -> Void)
+    func getByName(name: String, completion: @escaping (Result<[Character], NetworkError>) -> Void)
 }

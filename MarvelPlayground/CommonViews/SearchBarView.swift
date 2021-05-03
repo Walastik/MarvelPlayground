@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct SearchCharactersListView: View {
+struct SearchBarView: View {
     
-    @Binding var characterSearchTerm: String
+    @Binding var searchTerm: String
     
     var body: some View {
-        CustomTextField(placeholder: Text("Search").foregroundColor(Color.gray), text: $characterSearchTerm)
+        CustomTextField(placeholder: Text("Search").foregroundColor(Color.gray), text: $searchTerm)
             .foregroundColor(.gray)
             .padding(.leading, 40)
             .frame(height: 30)
@@ -29,6 +29,6 @@ struct SearchCharactersListView: View {
 
 struct SearchCharactersListView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchCharactersListView(characterSearchTerm: .constant(""))
+        SearchBarView(searchTerm: .constant(""))
     }
 }
