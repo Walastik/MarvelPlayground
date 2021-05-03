@@ -16,18 +16,11 @@ struct CharacterListItemView: View {
     var body: some View {
         HStack{
             AsyncImage(url: URL(string: characterImageUrl)!,
-                           placeholder: { Text("Loading ...") },
-                           image: { Image(uiImage: $0)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 90, height: 90)
-                            .clipShape(
-                                RoundedRectangle(cornerRadius: 12)
-                            ) as! Image
-                           })
-//                   .frame(idealHeight: UIScreen.main.bounds.width / 2 * 3) // 2:3 aspect ratio
-            
-//            Spacer()
+                       placeholder: { Text("Loading ...") },
+                       image: { Image(uiImage: $0).resizable() }
+            )
+            .scaledToFit()
+            .frame(width: 90, height: 90)
             
             VStack(alignment: .leading, spacing: 8, content: {
                 Text(character.name ?? "Error")

@@ -9,14 +9,7 @@ import SwiftUI
 
 struct CharactersListView: View {
     @ObservedObject var charactersService = CharacterViewModel()
-    @State private var characters = ["Iron Man", "Spiderman"]
     @State private var searchTerm = ""
-    
-    init() {
-        UITableView.appearance().separatorStyle = .none
-        UITableView.appearance().backgroundColor = .clear
-        UITableViewCell.appearance().backgroundColor = .clear
-    }
     
     var body: some View {
         ZStack {
@@ -28,17 +21,13 @@ struct CharactersListView: View {
                         SearchBarView(searchTerm: $searchTerm)
                         
                         ForEach(getCharacters(), id: \.id) { character in
-                            CharacterCell(character: character)
+                            CharacterListItemView(character: character)
                         }
                     }.listRowBackground(Color.clear)
                     .listRowInsets(EdgeInsets())
                 }.onAppear {
-                    fetchData(for: characters)
-                }.onChange(of: characters, perform: { value in
-                    
-                })
-                .listStyle(PlainListStyle())
-                .foregroundColor(.white)
+                    fetchData()
+                }
             }.padding(.horizontal, 32)
         }
         
@@ -50,7 +39,7 @@ struct CharactersListView: View {
             : charactersService.characters.filter({$0.name?.lowercased().contains(searchTerm.lowercased()) ?? false})
     }
     
-    private func fetchData(for names: [String]) {
+    private func fetchData() {
         charactersService.get(completion: {_ in})
     }
 }
