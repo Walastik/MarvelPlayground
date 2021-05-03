@@ -13,22 +13,23 @@ struct CharactersService {
         return "https://gateway.marvel.com/v1/public/characters?"
     }
     
-    static func searchUrl() -> String {
+    static func getBase() -> String {
         return urlBy(queryParam: .none, searchKey: "")
     }
     
-    static func nameSearchUrl(for name: String) -> String {
+    static func getByName(for name: String) -> String {
         return urlBy(queryParam: .name, searchKey: name)
     }
     
     private static func urlBy(queryParam: QueryParam, searchKey: String) -> String {
         let ts = Calendar.current.component(.nanosecond, from: Date())
         let md5 = MD5(string: "\(ts)\(privateKey)\(publicKey)")
+        let baseUrlAndRequiredParams = "\(baseUrl)ts=\(ts)&apikey=\(publicKey)&hash=\(md5)"
         switch queryParam {
         case .name:
-            return "\(baseUrl)name=\(searchKey)&ts=\(ts)&apikey=\(publicKey)&hash=\(md5)"
+            return "\(baseUrlAndRequiredParams)&name=\(searchKey)"
         default:
-            return "\(baseUrl)ts=\(ts)&apikey=\(publicKey)&hash=\(md5)"
+            return baseUrlAndRequiredParams
         }
     }
     

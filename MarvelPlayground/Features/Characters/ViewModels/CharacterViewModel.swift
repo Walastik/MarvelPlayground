@@ -11,7 +11,7 @@ final class CharacterViewModel: CharacterManagerProtocol, ObservableObject {
     @Published var characters: [Character] = []
     
     func get(completion: @escaping (Result<[Character], NetworkError>) -> Void) {
-        let url = URL(string: CharactersService.searchUrl())!
+        let url = URL(string: CharactersService.getBase())!
         NetworkUtils<MarvelApiBaseResponse<Character>>()
             .fetch(from: url) { (result) in
             switch result {
@@ -25,7 +25,7 @@ final class CharacterViewModel: CharacterManagerProtocol, ObservableObject {
     }
     
     func getByName(name: String, completion: @escaping (Result<[Character], NetworkError>) -> Void) {
-        let url = URL(string: CharactersService.nameSearchUrl(for: name))!
+        let url = URL(string: CharactersService.getByName(for: name))!
         NetworkUtils<MarvelApiBaseResponse<Character>>()
             .fetch(from: url) { (result) in
             switch result {

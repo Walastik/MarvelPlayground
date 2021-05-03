@@ -28,7 +28,7 @@ struct CharactersListView: View {
                 }.onAppear {
                     fetchData()
                 }
-            }.padding(.horizontal, 32)
+            }.padding(.horizontal, 10)
         }
         
     }
