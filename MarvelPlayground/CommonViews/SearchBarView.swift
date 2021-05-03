@@ -23,7 +23,6 @@ struct SearchBarView: View {
                     .foregroundColor(Color.gray)
                     .padding(.leading, 10)
             })
-        
     }
 }
 

@@ -17,10 +17,9 @@ struct CharacterListItemView: View {
         HStack{
             AsyncImage(url: URL(string: characterImageUrl)!,
                        placeholder: { Text("Loading ...") },
-                       image: { Image(uiImage: $0).resizable() }
-            )
-            .scaledToFit()
-            .frame(width: 90, height: 90)
+                       image: { Image(uiImage: $0).resizable() })
+                .scaledToFit()
+                .frame(width: 90, height: 90)
             
             VStack(alignment: .leading, spacing: 8, content: {
                 Text(character.name ?? "Error")

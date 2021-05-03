@@ -16,17 +16,21 @@ struct CharactersListView: View {
             Color.black
             
             VStack(alignment: .leading) {
-                List {
-                    Group {
-                        SearchBarView(searchTerm: $searchTerm)
-                        
-                        ForEach(getCharacters(), id: \.id) { character in
-                            CharacterListItemView(character: character)
-                        }
-                    }.listRowBackground(Color.clear)
-                    .listRowInsets(EdgeInsets())
-                }.onAppear {
-                    fetchData()
+                NavigationView {
+                    List {
+                        Group {
+                            SearchBarView(searchTerm: $searchTerm)
+                            
+                            ForEach(getCharacters(), id: \.id) { character in
+                                NavigationLink(destination: CharacterDetailView(character: character)) {
+                                    CharacterListItemView(character: character)
+                                }
+                            }
+                        }.listRowBackground(Color.clear)
+                        .listRowInsets(EdgeInsets())
+                    }.onAppear {
+                        fetchData()
+                    }
                 }
             }.padding(.horizontal, 10)
         }
@@ -41,6 +45,11 @@ struct CharactersListView: View {
     
     private func fetchData() {
         charactersService.get(completion: {_ in})
+    }
+    
+    private func fetchDataByName(name: String) -> [Character] {
+        charactersService.getByName(name: name, completion: {_ in})
+        return charactersService.characters
     }
 }
 

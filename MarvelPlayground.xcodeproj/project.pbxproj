@@ -168,9 +168,9 @@
 		AF67E7AE263E95C7007FF897 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AF74756D263FC9C100EA2654 /* CharacterDetailView.swift */,
 				AF67E7CC263F3FDE007FF897 /* CharacterListItemView.swift */,
 				AF67E79F263E5E2F007FF897 /* CharactersListView.swift */,
-				AF74756D263FC9C100EA2654 /* CharacterDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
